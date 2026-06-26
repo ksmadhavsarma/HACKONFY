@@ -1,0 +1,225 @@
+:root {
+    --bg-color: #0a0c10;
+    --card-bg: #11141a;
+    --neon-green: #00ff66;
+    --neon-cyan: #00f0ff;
+    --text-color: #cdd6f4;
+    --border-color: #222a36;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    min-height: calc(100vh - 140px);
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+.cyber-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 2px solid var(--border-color);
+    background: rgba(17, 20, 26, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--neon-cyan);
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+}
+
+.logo span {
+    color: var(--neon-green);
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: var(--neon-green);
+    text-shadow: 0 0 5px rgba(0, 255, 102, 0.5);
+}
+
+/* Dashboard Elements */
+.hero-section {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 40px 0;
+}
+
+.glitch-text {
+    font-size: 3.5rem;
+    color: #fff;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px var(--neon-cyan), -2px -2px var(--neon-green);
+}
+
+.subtitle {
+    margin-top: 15px;
+    color: #8c96a8;
+}
+
+.status-bar {
+    display: inline-block;
+    margin-top: 25px;
+    background: var(--card-bg);
+    padding: 8px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 0.85rem;
+}
+
+.pulse-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--neon-green);
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: 0 0 8px var(--neon-green);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+}
+
+.capabilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    border-radius: 4px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon-cyan);
+    box-shadow: 0 5px 15px rgba(0, 240, 255, 0.1);
+}
+
+.card h3 {
+    color: var(--neon-green);
+    margin-bottom: 15px;
+}
+
+/* Forms Framework */
+.auth-box {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 40px;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.auth-box h2 {
+    color: var(--neon-cyan);
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    color: #8c96a8;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background: #080a0e;
+    border: 1px solid var(--border-color);
+    color: #fff;
+    font-family: inherit;
+    border-radius: 4px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 5px rgba(0, 240, 255, 0.3);
+}
+
+.cyber-btn {
+    width: 100%;
+    padding: 14px;
+    background: transparent;
+    border: 1px solid var(--neon-green);
+    color: var(--neon-green);
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.cyber-btn:hover {
+    background: var(--neon-green);
+    color: var(--bg-color);
+    box-shadow: 0 0 10px rgba(0, 255, 102, 0.4);
+}
+
+.auth-switch {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #8c96a8;
+}
+
+.auth-switch a {
+    color: var(--neon-cyan);
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: #555e6b;
+    border-top: 1px solid var(--border-color);
+}
