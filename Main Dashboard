@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKONFY // Cyber Threat Command</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cyber-header">
+        <div class="logo">HACKONFY<span>//_</span></div>
+        <nav>
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="login.html">Agent Login</a>
+            <a href="register.html">Recruit</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero-section">
+            <h1 class="glitch-text" data-text="ANTI-THREAT UNIT">ANTI-THREAT UNIT</h1>
+            <p class="subtitle">Continuous network monitoring, penetration testing, and breach containment operations.</p>
+            <div class="status-bar">
+                <span class="pulse-indicator"></span> SYSTEM STATUS: SECURE // WALL_LEVEL: OPTIMAL
+            </div>
+        </section>
+
+        <section class="capabilities-grid">
+            <div class="card">
+                <h3>01 / Threat Hunting</h3>
+                <p>Proactive scanning of deep web nodes and unauthorized access points to neutralize attacks before execution.</p>
+            </div>
+            <div class="card">
+                <h3>02 / Incident Response</h3>
+                <p>Rapid containment protocols deployed within milliseconds of system anomalies or database compromise triggers.</p>
+            </div>
+            <div class="card">
+                <h3>03 / Code Auditing</h3>
+                <p>Deep binary reverse engineering and vulnerability tracking against emerging zero-day vulnerabilities.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HACKONFY Security Matrix. All rights reserved.</p>
+    </footer>
+</body>
+</html>
