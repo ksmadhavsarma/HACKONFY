@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKONFY // Agent Authentication</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cyber-header">
+        <div class="logo">HACKONFY<span>//_</span></div>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="login.html" class="active">Agent Login</a>
+            <a href="register.html">Recruit</a>
+        </nav>
+    </header>
+
+    <main class="container flex-center">
+        <div class="auth-box">
+            <h2>SECURE GATEWAY</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label>Agent ID/Email</label>
+                    <input type="text" id="loginUser" required placeholder="e.g., operator_404">
+                </div>
+                <div class="input-group">
+                    <label>Access Key</label>
+                    <input type="password" id="loginPass" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="cyber-btn">INITIALIZE HANDSHAKE</button>
+            </form>
+            <p class="auth-switch">New asset? <a href="register.html">Register credentials</a></p>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
