@@ -1,0 +1,33 @@
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // Login Validation Hook
+    const loginForm = document.getElementById('loginForm');
+    if (loginForm) {
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const user = document.getElementById('loginUser').value;
+            
+            alert(`HANDSHAKE RECONCILED: Welcome back, Agent [${user}]. Access granted.`);
+            window.location.href = 'index.html';
+        });
+    }
+
+    // Registration Validation Hook
+    const registerForm = document.getElementById('registerForm');
+    if (registerForm) {
+        registerForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const pass = document.getElementById('regPass').value;
+            const confirmPass = document.getElementById('regPassConfirm').value;
+            const user = document.getElementById('regUser').value;
+
+            if (pass !== confirmPass) {
+                alert('CRITICAL ERROR: Access credentials do not match. Integrity check failed.');
+                return;
+            }
+
+            alert(`REGISTRATION SUCCESSFUL: Identity [${user}] added to security mainframe.`);
+            window.location.href = 'login.html';
+        });
+    }
+});
