@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACKONFY // Deploy Clearance</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cyber-header">
+        <div class="logo">HACKONFY<span>//_</span></div>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="login.html">Agent Login</a>
+            <a href="register.html" class="active">Recruit</a>
+        </nav>
+    </header>
+
+    <main class="container flex-center">
+        <div class="auth-box">
+            <h2>NEW AGENT CLEARANCE</h2>
+            <form id="registerForm">
+                <div class="input-group">
+                    <label>Codename</label>
+                    <input type="text" id="regUser" required placeholder="e.g., ghost_protocol">
+                </div>
+                <div class="input-group">
+                    <label>Security Phrase</label>
+                    <input type="password" id="regPass" required placeholder="Create secure access key">
+                </div>
+                <div class="input-group">
+                    <label>Confirm Security Phrase</label>
+                    <input type="password" id="regPassConfirm" required placeholder="Verify key">
+                </div>
+                <button type="submit" class="cyber-btn verification-btn">PROVISION ACCESS</button>
+            </form>
+            <p class="auth-switch">Already registered? <a href="login.html">Authenticate here</a></p>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
